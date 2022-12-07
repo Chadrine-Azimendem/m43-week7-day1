@@ -1,0 +1,27 @@
+// creates a movie array
+
+const movieArr = [];
+
+class Movie {
+  // if the actor is not tiped in, assign "Not specified" to the actor variable.
+  constructor(
+    title,
+    actor = "Not specified",
+    director = "Not specified",
+    rating = "No rating yet"
+  ) {
+    this.title = title;
+    this.actor = actor;
+    this.director = director;
+    this.rating = rating;
+  }
+  // add method(function) pushes this entries to the movieArr.
+  add() {
+    movieArr.push(this); //movieArr is therefore an array of objects {title: "title entry", actor: "actor entry"}
+    console.log(movieArr);
+    console.log(this);
+  }
+}
+
+// because this is a module, export it.
+module.exports = Movie;
