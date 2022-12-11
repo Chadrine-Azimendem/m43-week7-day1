@@ -1,4 +1,7 @@
-// console.log(process.argv);
+// console.log("Hello world");
+
+// log the the argument vector to the console.
+// console.log(process.argv); //the argument vector gives all the arguments that are passed in the comand line. The first 2 argument are always the node and the file's directory.
 
 // if (process.argv[2] === "Harry") {
 //   console.log("Hello Mr. Poter");

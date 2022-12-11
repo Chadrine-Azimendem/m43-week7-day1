@@ -16,10 +16,9 @@ class Movie {
     this.rating = rating;
   }
   // add method(function) pushes this entries to the movieArr.
-  add() {
+  add(print) {
     movieArr.push(this); //movieArr is therefore an array of objects {title: "title entry", actor: "actor entry"}
-    console.log(movieArr);
-    console.log(this);
+    print ? console.table(movieArr) : "";
   }
 }
 
